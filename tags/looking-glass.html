@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tag: Looking Glass | iBOOT.PRO</title>
+    <meta name="description" content="pxe/netboot os installer" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/landing-page.css" rel="stylesheet"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="alternate" type="application/rss+xml" title="iBOOT.PRO" href="/rss.xml" />
+
+  </head>
+  <body  class="landing-page">
+    <nav class="navbar navbar-transparent navbar-top" role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bar1"></span>
+        <span class="icon-bar bar2"></span>
+        <span class="icon-bar bar3"></span>
+      </button>
+      <a href="/">
+                   <div class="logo-container">
+                        <div class="logo">
+                            <!-- you logо img -->
+                        </div>
+                        <div class="brand">
+                         iBOOT.PRO
+                        </div>
+                    </div>
+              </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="example" >
+      <ul class="nav navbar-nav navbar-right">
+
+      
+        <li>
+          <a href="/">Home</a>
+        </li>
+      
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      
+        <li>
+          <a href="/tags/fiction.html">Fiction</a>
+        </li>
+      
+        <li>
+          <a href="/tags/test.html">Test Posts</a>
+        </li>
+      
+
+       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+    <div class="site-wrapper">
+
+      
+
+<header class="main-header post-head" style="background-image: url(/img/cover.jpg)">
+  <nav class="main-nav overlay clearfix">
+    
+    <a class="blog-logo" href="http://127.0.0.1:9778"><img src="/img/logo.png" alt="iBOOT.PRO" /></a>
+    
+    
+      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+    
+  </nav>
+</header>
+
+<main id="content" class="content" role="main">
+  <h1 style="width: 80%; max-width: 710px; margin: 0px auto;">Posts for "Looking Glass" tag</h1>
+  
+  <article class="post">
+    <header class="post-header">
+      <h2 class="post-title"><a href="/posts/looking-glass-house.html">Looking Glass House (Paged)</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten <a class="read-more" href="/posts/looking-glass-house.html">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+      
+      <a href="">Denis Galyamin</a>
+      
+        
+  <a href="/tags/looking-glass.html">Looking Glass</a>, 
+
+  <a href="/tags/lewis-carroll.html">Lewis Carroll</a>, 
+
+  <a href="/tags/fiction.html">fiction</a>
+
+      
+      <time class="post-date" datetime="2015-June-06">06 June 2015</time>
+    </footer>
+  </article>
+  
+
+</main>
+
+      <footer class="footer">
+              <div class="container">
+                  <nav class="pull-left copyright">
+                      &copy; 2016 <a href="http://iboot.pro/">iBOOT.PRO</a>
+                  </nav>
+
+              </div>
+          </footer>
+
+    </div>
+  </body>
+  <script defer="defer"  src="js/jquery-1.10.2.js"></script><script defer="defer"  src="js/jquery-ui-1.10.4.custom.min.js"></script><script defer="defer"  src="js/bootstrap.js"></script>
+  <script type="text/javascript">
+        var big_image;
+        $().ready(function(){
+
+            responsive = $(window).width();
+
+            if (responsive >= 768){
+                big_image = $('.parallax-background').find('img');
+                console.log(big_image);
+                $(window).on('scroll',function(){
+                    parallax();
+                });
+            }
+
+            $('.selector').click(function() {
+                SelectColor(this);
+            });
+        });
+
+        function SelectColor(btn) {
+            oldColor = $('.filter-gradient').attr('data-color');
+            newColor = $(btn).attr('data-color');
+
+            oldButton = $('#Demo').attr('data-button');
+            newButton = $(btn).attr('data-button');
+
+            $('.filter-gradient').removeClass(oldColor).addClass(newColor).attr('data-color',newColor);
+
+            $('#Demo').removeClass("btn-"+oldButton).addClass("btn-"+newButton).attr('data-button',newButton);
+
+            $('.carousel-indicators').removeClass("carousel-indicators-"+oldColor).addClass("carousel-indicators-"+newColor);
+
+            $('.card').removeClass("card-"+oldColor).addClass("card-"+newColor);
+
+            $('.selector').parent().removeClass('active');
+            $(btn).parent().addClass('active');
+        }
+
+       var parallax = function() {
+            var current_scroll = $(this).scrollTop();
+
+            oVal = ($(window).scrollTop() / 3);
+            big_image.css('top',oVal);
+        };
+    </script>
+	<script src="js/SmoothScroll.js"></script>
+
+<!--
+Google Analitics
+Demo Purpose Only
+Change UA-XXXXXXX-X to be your site's ID
+ -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73804370-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</html>
