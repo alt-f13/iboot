@@ -1,3 +1,5 @@
 casper-original
 node_modules
 out
+.DS_Store
+.idea

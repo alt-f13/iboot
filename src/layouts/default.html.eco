@@ -8,22 +8,34 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico">
-    <%- @getBlock("styles").add('/css/screen.css').add('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400').toHTML() %>
-    <meta name="generator" content="Docpad 6.x" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/landing-page.css" rel="stylesheet"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
     <link rel="alternate" type="application/rss+xml" title="<%= @site.title %>" href="/rss.xml" />
+
   </head>
-  <body class="<%= @bodyClass() %> nav-closed">
+  <body  class="landing-page">
     <%- @partial('navigation') %>
     <div class="site-wrapper">
 
       <%- @content %>
 
-      <footer class="site-footer clearfix">
-        <section class="copyright"><a href="<%= @site.url %>"><%= @site.title %></a> &copy; <%= @currentYear() %></section>
-        <section class="poweredby">Proudly published with <a href="https://docpad.org">Docpad</a></section>
-      </footer>
+      <footer class="footer">
+              <div class="container">
+                  <nav class="pull-left copyright">
+                      &copy; 2016 <a href="http://iboot.pro/">iBOOT.PRO</a>
+                  </nav>
+
+              </div>
+          </footer>
 
     </div>
-    <%- @getBlock("scripts").add('//code.jquery.com/jquery-2.1.4.min.js').add('/js/jquery.fitvids.js').add('/js/index.js').toHTML() %>
   </body>
+  <%- @getBlock("scripts").add('js/jquery-1.10.2.js').add('js/jquery-ui-1.10.4.custom.min.js').add('js/bootstrap.js').toHTML() %>
+  <%- @partial('scripts') %>
 </html>

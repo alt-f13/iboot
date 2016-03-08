@@ -8,26 +8,190 @@ prefix: 'page'
 pageSize: 5
 ---
 
-<header class="main-header" style="background-image: url(<%= @masthead() %>)">
-  <nav class="main-nav overlay clearfix">
-    <% if @site.logo: %>
-    <a class="blog-logo" href="<%= @site.url %>"><img src="<%= @site.logo %>" alt="<%= @site.title %>" /></a>
-    <% end %>
-    <% if @site.navigation: %>
-      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-    <% end %>
-  </nav>
-  <div class="vertical">
-    <div class="main-header-content inner">
-      <h1 class="page-title"><%= @site.title %></h1>
-      <h2 class="page-description"><%= @site.tagline %></h2>
+
+    <div class="parallax filter-gradient blue" data-color="blue">
+        <div class="parallax-background">
+            <img src="img/landing-page-1/bg.jpg">
+        </div>
+        <div class= "container">
+            <div class="row">
+                <div class="col-sm-5 hidden-xs">
+                    <div class="parallax-image">
+                        <img src="img/landing-page-1/iphone.png"/>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-offset-1">
+                    <div class="description">
+                        <h2>Сетевой загрузчик</h2>
+                        <br>
+                        <h5>
+													<li>скачайте</li>
+													<li>запустите</li>
+													<li>загружайтесь</li>
+												</h5>
+                    </div>
+                    <div class="buttons">
+                        <a href="./downloads/iBoot.pro.osx.bin">
+                            <button class="btn btn-neutral btn-lg">
+                                <i class="fa fa-lg fa-apple"></i> Mac OS
+                            </button>
+                        </a>
+                        <a href="./downloads/iBoot.pro.bin">
+                            <button class="btn btn-neutral btn-lg">
+                                <i class="fa fa-lg fa-linux"></i> Linux
+                            </button>
+                        </a>
+                        <a href="./downloads/iBoot.pro.exe">
+                            <button class="btn btn-neutral btn-lg">
+                                <i class="fa fa-lg fa-windows"></i> Windows
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
 
-<main id="content" class="content" role="main">
+    <div class="section section-features section-no-padding" style="display:none;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 grayblock2">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Online Customers Management</h4>
+                            <p>Automatic text and email reminders make sure customers always remember their upcoming appointments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 grayblock">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-binoculars"></i>
+                        </div>
+                        <h4>Smart Notifications on hands</h4>
+                        <p>All appointments sync with your Google calendar so your availability is always up to date. See your schedule at a glance from any device.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 grayblock2">
+                    <div class="card card-blue">
+                        <div class="icon">
+                            <i class="fa fa-university"></i>
+                        </div>
+                        <h4>Know your business better now</h4>
+                        <p>Take payments and run your business on the go, in your store and then see how it all adds up with analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<div class="section section-presentation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="description">
+											<h2>Состав меню</h2>
+                            <h4 class="header-text">
+														<i class="fa fa-lg fa-windows"></i>
+														Windows:
+													</h4>
+														<ul>
+														<li>
+															Windows 7
+														</li>
+														<li>
+															Windows 8.1
+														</li>
+														<li>
+															Windows Server 2008r2
+														</li>
+														<li>
+															Windows Server 2012r2
+														</li>
+														</ul>
+														<h4 class="header-text">
+															<i class="fa fa-lg fa-linux"></i>
+															Linux:
+														</h4>
+														<ul>
+															<li>
+																Debian 7
+															</li>
+															<li>
+																Debian 6
+															</li>
+															<li>
+																CentOS 7
+															</li>
+															<li>
+																CentOS 6
+															</li>
+															<li>
+																Ubuntu 14.10
+															</li>
+															<li>
+																Ubuntu 14.04
+															</li>
+															<li>
+																Ubuntu 12.10
+															</li>
+															<li>
+																Ubuntu 12.04
+															</li>
+														</ul>
+														   <h4 class="header-text">
 
-  <%- @partial('loop') %>
+															<i class="fa fa-lg fa-cog"></i>
+															HDD and RAM utils:
+															</h4>
 
-</main>
+														<ul>
+															<li>
+																Memtest86+
+															</li>
+															<li>
+																Clonezilla-live
+															</li>
+															<li>
+																SystemRescueCD
+															</li>
+															<li>
+																MHDD
+															</li>
+														</ul>
+														<h4 class="header-text">
+														<i class="fa fa-lg fa-medkit"></i>
+														Antiviruses:
+													</h4>
+														<ul>
+															<li>
+																Kaspersky Antivirus LiveCD
+															</li>
+															<li>
+																AVG Rescue CD
+															</li>
+														</ul>
+
+			              </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1 hidden-xs">
+                    <img src="img/landing-page-1/mac2.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="section section-contact">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Контакты:</h2>
+              	<h3><a href="mailto:galyamin@icloud.com">galyamin@icloud.com</a></h3>
+
+            </div>
+        </div>
+    </div>
+</div>
